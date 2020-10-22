@@ -62,10 +62,13 @@ public class AddNewContactsPageTest extends TestBase{
 	
 	@Test(priority=1, dataProvider="getCRMTestData")
 	public void createNewContactTest(String firstName, String lastName, String company){
+		
+		log.info("***************start of createNewContactTest******************");
 		contactsInfoPage=addNewContactsPage.addNewContact(firstName, lastName, company);
 		String actualHeader=contactsInfoPage.getUIHeader(firstName, lastName).getText();
 		String expectedHeader=firstName + " " + lastName;
 		Assert.assertEquals(actualHeader, expectedHeader);
+		log.info("***************end of createNewContactTest******************");
 	}	
 
 	@AfterMethod

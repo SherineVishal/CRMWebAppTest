@@ -38,11 +38,12 @@ public class ContactsPageTest extends TestBase{
 	
 	@Test(priority=1)
 	public void clickOnNewBtnTest(){
+		log.info("***************start of clickOnNewBtnTest******************");
 		addNewContactsPage=contactsPage.clickOnNewContacts();
 		String actualUrl=driver.getCurrentUrl();
 		String expectedUrl="https://ui.freecrm.com/contacts/new";
 		Assert.assertEquals(actualUrl, expectedUrl);
-
+		log.info("***************end of clickOnNewBtnTest******************");
 	}	
 
 	@AfterMethod

@@ -30,17 +30,21 @@ public class IndexPageTest extends TestBase{
 	
 	@Test(priority=1)
 	public void indexPageTitleTest(){
+		log.info("***************start of indexPageTitleTest******************");
 		String actualPageTitle = indexPage.getIndexPageTitle();
 		String expectedPageTitle="#1 Free CRM customer relationship management software cloud";
 		Assert.assertEquals(actualPageTitle, expectedPageTitle);
+		log.info("***************end of indexPageTitleTest******************");
 	}
 	
 	@Test(priority=2)
 	public void clickOnLoginBtnTest(){
+		log.info("***************start of clickOnLoginBtnTest******************");
 		loginPage=indexPage.clickOnLoginBtn();
 		String actualUrl=driver.getCurrentUrl();
 		String expectedUrl="https://ui.freecrm.com/";
 		Assert.assertEquals(actualUrl, expectedUrl);
+		log.info("***************end of clickOnLoginBtnTest******************");
 	}
 	
 	@AfterMethod

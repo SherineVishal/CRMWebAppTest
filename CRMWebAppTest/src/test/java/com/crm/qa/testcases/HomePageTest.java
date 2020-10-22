@@ -34,10 +34,12 @@ public class HomePageTest extends TestBase{
 	
 	@Test(priority=1)
 	public void verifyContactsLinkTest(){
+		log.info("***************start of verifyContactsLinkTest******************");
 		contactsPage = homePage.clickOnContactsLink();
 		String actualUrl=driver.getCurrentUrl();
 		String expectedUrl="https://ui.freecrm.com/contacts";
 		Assert.assertEquals(actualUrl, expectedUrl);
+		log.info("***************end of verifyContactsLinkTest******************");
 	}	
 	
 	

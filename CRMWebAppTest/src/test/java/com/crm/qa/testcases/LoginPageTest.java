@@ -27,12 +27,14 @@ public class LoginPageTest extends TestBase{
 		loginPage=indexPage.clickOnLoginBtn();
 	}
 	
-	@Test(priority=3)
+	@Test(priority=1)
 	public void loginTest(){
+		log.info("***************start of loginTest******************");
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		String actualUrl=driver.getCurrentUrl();
 		String expectedUrl="https://ui.freecrm.com/";
 		Assert.assertEquals(actualUrl, expectedUrl);
+		log.info("***************end of loginTest******************");
 	}	
 	
 	@AfterMethod
