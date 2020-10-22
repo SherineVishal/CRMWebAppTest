@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-CRM_Application_Test_Automation_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">CRM Application Test Automation Test Suite</span>
+              <span class="suite-name border-failed">CRM Application Test Automation Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,  3 skipped,  7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CRM_Application_Test_Automation_Test_Suite" class="hide-methods failed suite-CRM_Application_Test_Automation_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-CRM_Application_Test_Automation_Test_Suite -->
+                      <a href="#" panel-name="suite-CRM_Application_Test_Automation_Test_Suite" class="show-methods failed suite-CRM_Application_Test_Automation_Test_Suite"> (show)</a> <!-- show-methods failed suite-CRM_Application_Test_Automation_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-CRM_Application_Test_Automation_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.IndexPageTest" class="method navigator-link" hash-for-method="indexPageTitleTest">indexPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CRM_Application_Test_Automation_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-CRM_Application_Test_Automation_Test_Suite" class="hide-methods skipped suite-CRM_Application_Test_Automation_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-CRM_Application_Test_Automation_Test_Suite -->
+                      <a href="#" panel-name="suite-CRM_Application_Test_Automation_Test_Suite" class="show-methods skipped suite-CRM_Application_Test_Automation_Test_Suite"> (show)</a> <!-- show-methods skipped suite-CRM_Application_Test_Automation_Test_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-CRM_Application_Test_Automation_Test_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.IndexPageTest" class="method navigator-link" hash-for-method="indexPageTitleTest">indexPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.IndexPageTest" class="method navigator-link" hash-for-method="indexPageTitleTest">indexPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.IndexPageTest" class="method navigator-link" hash-for-method="indexPageTitleTest">indexPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-CRM_Application_Test_Automation_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,11 +152,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.AddNewContactsPageTest" class="method navigator-link" hash-for-method="createNewContactTest(Sophia, Mannanal, Google)">createNewContactTest(Sophia, Mannanal, Google)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.AddNewContactsPageTest" class="method navigator-link" hash-for-method="createNewContactTest(Merine, Thomas, Facebook)">createNewContactTest(Merine, Thomas, Facebook)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -129,7 +162,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.IndexPageTest" class="method navigator-link" hash-for-method="indexPageTitleTest">indexPageTitleTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.AddNewContactsPageTest" class="method navigator-link" hash-for-method="createNewContactTest(Sophia, Mannanal, Google)">createNewContactTest(Sophia, Mannanal, Google)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -154,17 +187,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-CRM_Application_Test_Automation_Test_Suite" class="panel CRM_Application_Test_Automation_Test_Suite">
-          <div class="suite-CRM_Application_Test_Automation_Test_Suite-class-passed">
+          <div class="suite-CRM_Application_Test_Automation_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.crm.qa.testcases.IndexPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickOnLoginBtnTest">
-                  </a> <!-- clickOnLoginBtnTest -->
-                  <span class="method-name">clickOnLoginBtnTest</span>
+                  <a name="indexPageTitleTest">
+                  </a> <!-- indexPageTitleTest -->
+                  <span class="method-name">indexPageTitleTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [#1 Free CRM customer relationship management software cloud#] but found [#1 Free CRM customer relationship management software cloud]
+	at com.crm.qa.testcases.IndexPageTest.indexPageTitleTest(IndexPageTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CRM_Application_Test_Automation_Test_Suite-class-failed -->
+          <div class="suite-CRM_Application_Test_Automation_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.crm.qa.testcases.IndexPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="indexPageTitleTest">
+                  </a> <!-- indexPageTitleTest -->
+                  <span class="method-name">indexPageTitleTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [#1 Free CRM customer relationship management software cloud#] but found [#1 Free CRM customer relationship management software cloud]
+	at com.crm.qa.testcases.IndexPageTest.indexPageTitleTest(IndexPageTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -172,6 +230,38 @@
                   <a name="indexPageTitleTest">
                   </a> <!-- indexPageTitleTest -->
                   <span class="method-name">indexPageTitleTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [#1 Free CRM customer relationship management software cloud#] but found [#1 Free CRM customer relationship management software cloud]
+	at com.crm.qa.testcases.IndexPageTest.indexPageTitleTest(IndexPageTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="indexPageTitleTest">
+                  </a> <!-- indexPageTitleTest -->
+                  <span class="method-name">indexPageTitleTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [#1 Free CRM customer relationship management software cloud#] but found [#1 Free CRM customer relationship management software cloud]
+	at com.crm.qa.testcases.IndexPageTest.indexPageTitleTest(IndexPageTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CRM_Application_Test_Automation_Test_Suite-class-skipped -->
+          <div class="suite-CRM_Application_Test_Automation_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.crm.qa.testcases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyContactsLinkTest">
+                  </a> <!-- verifyContactsLinkTest -->
+                  <span class="method-name">verifyContactsLinkTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -194,46 +284,14 @@
           <div class="suite-CRM_Application_Test_Automation_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.crm.qa.testcases.AddNewContactsPageTest</span>
+              <span class="class-name">com.crm.qa.testcases.IndexPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createNewContactTest(Sophia, Mannanal, Google)">
-                  </a> <!-- createNewContactTest(Sophia, Mannanal, Google) -->
-                  <span class="method-name">createNewContactTest</span>
-                  <span class="parameters">(Sophia, Mannanal, Google)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createNewContactTest(Merine, Thomas, Facebook)">
-                  </a> <!-- createNewContactTest(Merine, Thomas, Facebook) -->
-                  <span class="method-name">createNewContactTest</span>
-                  <span class="parameters">(Merine, Thomas, Facebook)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="createNewContactTest(Sherine, Thomas, Costco)">
-                  </a> <!-- createNewContactTest(Sherine, Thomas, Costco) -->
-                  <span class="method-name">createNewContactTest</span>
-                  <span class="parameters">(Sherine, Thomas, Costco)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-CRM_Application_Test_Automation_Test_Suite-class-passed -->
-          <div class="suite-CRM_Application_Test_Automation_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.crm.qa.testcases.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyContactsLinkTest">
-                  </a> <!-- verifyContactsLinkTest -->
-                  <span class="method-name">verifyContactsLinkTest</span>
+                  <a name="clickOnLoginBtnTest">
+                  </a> <!-- clickOnLoginBtnTest -->
+                  <span class="method-name">clickOnLoginBtnTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -253,6 +311,38 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-CRM_Application_Test_Automation_Test_Suite-class-passed -->
+          <div class="suite-CRM_Application_Test_Automation_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.crm.qa.testcases.AddNewContactsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewContactTest(Merine, Thomas, Facebook)">
+                  </a> <!-- createNewContactTest(Merine, Thomas, Facebook) -->
+                  <span class="method-name">createNewContactTest</span>
+                  <span class="parameters">(Merine, Thomas, Facebook)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewContactTest(Sherine, Thomas, Costco)">
+                  </a> <!-- createNewContactTest(Sherine, Thomas, Costco) -->
+                  <span class="method-name">createNewContactTest</span>
+                  <span class="parameters">(Sherine, Thomas, Costco)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createNewContactTest(Sophia, Mannanal, Google)">
+                  </a> <!-- createNewContactTest(Sophia, Mannanal, Google) -->
+                  <span class="method-name">createNewContactTest</span>
+                  <span class="parameters">(Sophia, Mannanal, Google)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CRM_Application_Test_Automation_Test_Suite-class-passed -->
         </div> <!-- panel CRM_Application_Test_Automation_Test_Suite -->
         <div panel-name="test-xml-CRM_Application_Test_Automation_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -265,6 +355,7 @@
 &lt;suite name=&quot;CRM Application Test Automation Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.crm.qa.ExtentReport.ExtentReportListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.crm.qa.Analyzer.AnnotationTransformer&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;CRM App Test Cases&quot;&gt;
     &lt;classes&gt;
@@ -312,44 +403,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(11);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createNewContactTest')
 data.setCell(0, 2, 'com.crm.qa.testcases.AddNewContactsPageTest')
-data.setCell(0, 3, 2350);
+data.setCell(0, 3, 2117);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createNewContactTest')
 data.setCell(1, 2, 'com.crm.qa.testcases.AddNewContactsPageTest')
-data.setCell(1, 3, 2076);
+data.setCell(1, 3, 2060);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'createNewContactTest')
 data.setCell(2, 2, 'com.crm.qa.testcases.AddNewContactsPageTest')
-data.setCell(2, 3, 1727);
+data.setCell(2, 3, 1922);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'clickOnNewBtnTest')
-data.setCell(3, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(3, 3, 1097);
+data.setCell(3, 1, 'loginTest')
+data.setCell(3, 2, 'com.crm.qa.testcases.LoginPageTest')
+data.setCell(3, 3, 1915);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyContactsLinkTest')
 data.setCell(4, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(4, 3, 1070);
+data.setCell(4, 3, 1039);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'clickOnLoginBtnTest')
-data.setCell(5, 2, 'com.crm.qa.testcases.IndexPageTest')
-data.setCell(5, 3, 617);
+data.setCell(5, 1, 'clickOnNewBtnTest')
+data.setCell(5, 2, 'com.crm.qa.testcases.ContactsPageTest')
+data.setCell(5, 3, 998);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginTest')
-data.setCell(6, 2, 'com.crm.qa.testcases.LoginPageTest')
-data.setCell(6, 3, 607);
+data.setCell(6, 1, 'clickOnLoginBtnTest')
+data.setCell(6, 2, 'com.crm.qa.testcases.IndexPageTest')
+data.setCell(6, 3, 859);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'indexPageTitleTest')
 data.setCell(7, 2, 'com.crm.qa.testcases.IndexPageTest')
-data.setCell(7, 3, 165);
+data.setCell(7, 3, 184);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'indexPageTitleTest')
+data.setCell(8, 2, 'com.crm.qa.testcases.IndexPageTest')
+data.setCell(8, 3, 118);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'indexPageTitleTest')
+data.setCell(9, 2, 'com.crm.qa.testcases.IndexPageTest')
+data.setCell(9, 3, 29);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'indexPageTitleTest')
+data.setCell(10, 2, 'com.crm.qa.testcases.IndexPageTest')
+data.setCell(10, 3, 14);
 window.suiteTableData['CRM_Application_Test_Automation_Test_Suite']= { tableData: data, tableDiv: 'times-div-CRM_Application_Test_Automation_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-CRM_Application_Test_Automation_Test_Suite">
               </div> <!-- times-div-CRM_Application_Test_Automation_Test_Suite -->
             </div> <!-- times-div -->
@@ -382,107 +485,145 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">indexPageTitleTest</span>
-                <span class="method-start">8394 ms</span>
+                <span class="method-start">8841 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8563 ms</span>
+                <span class="method-start">9031 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">9471 ms</span>
+                <span class="method-start">10069 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">clickOnLoginBtnTest</span>
-                <span class="method-start">17734 ms</span>
+                <span class="method-name">indexPageTitleTest</span>
+                <span class="method-start">18250 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18353 ms</span>
+                <span class="method-start">18283 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">19635 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">indexPageTitleTest</span>
+                <span class="method-start">27406 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">27526 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">28425 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">indexPageTitleTest</span>
+                <span class="method-start">36228 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">36244 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">37103 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickOnLoginBtnTest</span>
+                <span class="method-start">44346 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">45208 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">19207 ms</span>
+                <span class="method-start">46051 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">29395 ms</span>
+                <span class="method-start">54340 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">30004 ms</span>
+                <span class="method-start">56256 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">31576 ms</span>
+                <span class="method-start">57871 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyContactsLinkTest</span>
-                <span class="method-start">41905 ms</span>
+                <span class="method-start">68233 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">42977 ms</span>
+                <span class="method-start">69273 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.ContactsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">44498 ms</span>
+                <span class="method-start">70968 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">clickOnNewBtnTest</span>
-                <span class="method-start">57008 ms</span>
+                <span class="method-start">81527 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">58106 ms</span>
+                <span class="method-start">82526 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.AddNewContactsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">59726 ms</span>
+                <span class="method-start">84357 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createNewContactTest(Sophia, Mannanal, Google)</span>
-                <span class="method-start">71582 ms</span>
+                <span class="method-start">96304 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">73660 ms</span>
+                <span class="method-start">98228 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">74567 ms</span>
+                <span class="method-start">99169 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createNewContactTest(Sherine, Thomas, Costco)</span>
-                <span class="method-start">86397 ms</span>
+                <span class="method-start">110602 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">88749 ms</span>
+                <span class="method-start">112720 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">89678 ms</span>
+                <span class="method-start">113976 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createNewContactTest(Merine, Thomas, Facebook)</span>
-                <span class="method-start">102822 ms</span>
+                <span class="method-start">126486 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">104551 ms</span>
+                <span class="method-start">128547 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

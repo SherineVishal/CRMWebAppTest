@@ -4,6 +4,7 @@
 
 	<listeners>
 		<listener class-name="com.crm.qa.ExtentReport.ExtentReportListener" />
+		<listener class-name="com.crm.qa.Analyzer.AnnotationTransformer"/>
 	</listeners>
 
 	<test name="CRM App Test Cases">
