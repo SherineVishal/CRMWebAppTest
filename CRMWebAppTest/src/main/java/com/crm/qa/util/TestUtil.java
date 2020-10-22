@@ -21,8 +21,7 @@ public class TestUtil extends TestBase{
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 20;
 
-	public static String TESTDATA_SHEET_PATH = "C:\\Users\\sheri\\git\\CRMWebAppTest\\"
-			+ "CRMWebAppTest\\src\\main\\java\\com\\crm\\qa\\testdata\\CrmTestData.xlsx";
+	public static String TESTDATA_SHEET_PATH =  System.getProperty("user.dir") + "\\src\\main\\java\\com\\crm\\qa\\testdata\\CrmTestData.xlsx";
 
 	static Workbook book;
 	static Sheet sheet;
