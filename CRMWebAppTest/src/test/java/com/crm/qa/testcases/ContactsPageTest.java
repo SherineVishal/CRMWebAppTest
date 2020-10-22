@@ -38,7 +38,7 @@ public class ContactsPageTest extends TestBase{
 	}
 	
 	@Test(priority=1)
-	public void clickOnNewBtn(){
+	public void clickOnNewBtnTest(){
 		addNewContactsPage=contactsPage.clickOnNewContacts();
 		String actualUrl=driver.getCurrentUrl();
 		String expectedUrl="https://ui.freecrm.com/contacts/new";
@@ -48,7 +48,7 @@ public class ContactsPageTest extends TestBase{
 
 	@AfterMethod
 	public void tearDown(){
-		//driver.quit();
+		driver.quit();
 	}
 
 }
