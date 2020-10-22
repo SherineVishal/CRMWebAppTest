@@ -16,6 +16,7 @@ import org.testng.log4testng.Logger;
 
 import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.AddNewContactsPage;
+import com.crm.qa.pages.ContactsInfoPage;
 import com.crm.qa.pages.ContactsPage;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.IndexPage;
@@ -29,6 +30,7 @@ public class AddNewContactsPageTest extends TestBase{
 	TestUtil testUtil;
 	ContactsPage contactsPage;
 	AddNewContactsPage addNewContactsPage;
+	ContactsInfoPage contactsInfoPage;
 	
 	String sheetName = "contacts";
 	
@@ -60,8 +62,10 @@ public class AddNewContactsPageTest extends TestBase{
 	
 	@Test(priority=1, dataProvider="getCRMTestData")
 	public void createNewContactTest(String firstName, String lastName, String company){
-		addNewContactsPage.addNewContact(firstName, lastName, company);
-		
+		contactsInfoPage=addNewContactsPage.addNewContact(firstName, lastName, company);
+		String actualHeader=contactsInfoPage.getUIHeader(firstName, lastName).getText();
+		String expectedHeader=firstName + " " + lastName;
+		Assert.assertEquals(actualHeader, expectedHeader);
 	}	
 
 	@AfterMethod

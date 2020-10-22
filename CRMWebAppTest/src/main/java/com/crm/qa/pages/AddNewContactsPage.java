@@ -25,13 +25,13 @@ public class AddNewContactsPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}	
 	
-	public void addNewContact(String fName, String lName, String comp){
+	public ContactsInfoPage addNewContact(String fName, String lName, String comp){
 		
 		firstName.sendKeys(fName);
 		lastName.sendKeys(lName);
 		company.sendKeys(comp);
 		saveBtn.click();
-		
+		return new ContactsInfoPage();
 	}
 }
 	

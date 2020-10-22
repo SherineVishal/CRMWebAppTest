@@ -6,7 +6,7 @@
       <class name="com.crm.qa.testcases.AddNewContactsPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="createNewContactTest" invocation-numbers="0"/>
+          <include name="createNewContactTest" invocation-numbers="0 1 2"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.AddNewContactsPageTest -->
